@@ -1,11 +1,10 @@
 import random
+
 z = int(input("Введіть число від 1 до 20:"))
 rlist = []
-
 for i in range(0, 20):
     x = random.randint(0, 20)
     rlist.append(x)
-
 print(rlist)
 k = 0
 listz = []
@@ -22,7 +21,7 @@ n = 0
 for i in range(0, l):
     if listz[i] == x:
         print('Його індекс:', listz.index(x))
-        listz[n], listz[i] = listz[i], listz[n]
+        rlist[n], listz[i] = listz[i], rlist[n]
         h = int(listz[i])
         n = int(listz[n])
         break
