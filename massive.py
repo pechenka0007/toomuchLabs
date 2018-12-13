@@ -29,4 +29,5 @@ for i in range(n, l):
     if listz[i] == x:
         listz[i] = h
 print('Фінальний массив виконаний зі всіма умовами =', listz)
+print('Початковий массив, зі зміненим елементом:', rlist)
 input('press ENTER to exit')
