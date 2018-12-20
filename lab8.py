@@ -44,10 +44,14 @@ def err():
 
 
 def call():
+    diag = []
     matrsort()
     err()
     print('Відсортована матриця:')
     matrgen(ma2)
+    for i in range(n):
+        diag.append(ma2[i][i])
+    print('Діагональ відсортованої матриці:', diag)
 
 
 call()
